@@ -16,6 +16,7 @@ interface CartItem extends MenuItem {
 export default function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isCategoryMenuOpen, setIsCategoryMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string>("Focacce alte");
 
   const categoryOrder = [
@@ -150,12 +151,20 @@ export default function App() {
       <header className="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <div className="bg-orange-600 p-2 rounded-xl rotate-3">
-              <h1 className="text-xl font-black text-white italic tracking-tighter uppercase leading-none">Gerry</h1>
-            </div>
-            <div>
-              <h2 className="text-lg font-black tracking-tighter text-gray-900 uppercase italic leading-none">Pizzeria</h2>
-              <p className="text-[8px] font-bold text-gray-400 uppercase tracking-[0.3em] mt-0.5">Sesto San Giovanni</p>
+            <button 
+              onClick={() => setIsCategoryMenuOpen(true)}
+              className="p-2.5 bg-gray-50 rounded-2xl hover:bg-orange-50 transition-colors group lg:hidden"
+            >
+              <ChevronRight size={20} className="text-gray-600 group-hover:text-orange-600" />
+            </button>
+            <div className="flex items-center gap-4">
+              <div className="bg-orange-600 p-2 rounded-xl rotate-3">
+                <h1 className="text-xl font-black text-white italic tracking-tighter uppercase leading-none">Gerry</h1>
+              </div>
+              <div>
+                <h2 className="text-lg font-black tracking-tighter text-gray-900 uppercase italic leading-none">Pizzeria</h2>
+                <p className="text-[8px] font-bold text-gray-400 uppercase tracking-[0.3em] mt-0.5">Sesto San Giovanni</p>
+              </div>
             </div>
           </div>
           
@@ -295,11 +304,11 @@ export default function App() {
 
       <main id="menu-start" className="max-w-6xl mx-auto px-4 py-16">
         <div className="flex flex-col lg:flex-row gap-12">
-          {/* Sidebar Navigation (Desktop) / Category Grid (Mobile) */}
-          <aside className="lg:w-64 flex-shrink-0">
+          {/* Desktop Sidebar (Persistent but elegant) */}
+          <aside className="hidden lg:block lg:w-64 flex-shrink-0">
             <div className="sticky top-24 space-y-8">
-              <div className="hidden lg:block">
-                <h3 className="text-xs font-black uppercase tracking-[0.3em] text-gray-400 mb-6">Categorie</h3>
+              <div>
+                <h3 className="text-xs font-black uppercase tracking-[0.3em] text-gray-400 mb-6">Esplora Menù</h3>
                 <nav className="space-y-1">
                   {categories.map(cat => (
                     <button
@@ -308,7 +317,7 @@ export default function App() {
                         setActiveCategory(cat);
                         document.getElementById('menu-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                       }}
-                      className={`w-full text-left px-4 py-3 rounded-2xl text-sm font-bold transition-all flex items-center justify-between group ${
+                      className={`w-full text-left px-5 py-4 rounded-2xl text-sm font-bold transition-all flex items-center justify-between group ${
                         activeCategory === cat 
                           ? 'bg-orange-600 text-white shadow-xl shadow-orange-100 translate-x-2' 
                           : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'
@@ -321,26 +330,6 @@ export default function App() {
                 </nav>
               </div>
 
-              {/* Mobile Category Grid */}
-              <div className="lg:hidden">
-                <h3 className="text-center text-xs font-black uppercase tracking-[0.3em] text-gray-400 mb-6">Scegli Categoria</h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                  {categories.map(cat => (
-                    <button
-                      key={cat}
-                      onClick={() => setActiveCategory(cat)}
-                      className={`px-3 py-4 rounded-2xl text-[10px] font-black uppercase tracking-widest transition-all text-center flex flex-col items-center justify-center gap-2 ${
-                        activeCategory === cat 
-                          ? 'bg-orange-600 text-white shadow-lg shadow-orange-200 scale-[1.02]' 
-                          : 'bg-white border border-gray-100 text-gray-600 shadow-sm'
-                      }`}
-                    >
-                      {cat}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
               <div className="p-6 bg-gray-900 rounded-3xl text-white relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/20 rounded-full blur-3xl -mr-16 -mt-16" />
                 <h4 className="relative z-10 text-lg font-black italic uppercase leading-tight mb-2">Hai fame?</h4>
@@ -351,6 +340,27 @@ export default function App() {
               </div>
             </div>
           </aside>
+
+          {/* Mobile Category Trigger (Floating) */}
+          <div className="lg:hidden mb-8">
+            <button 
+              onClick={() => setIsCategoryMenuOpen(true)}
+              className="w-full bg-white border border-gray-100 p-5 rounded-[2rem] shadow-xl flex items-center justify-between group active:scale-95 transition-all"
+            >
+              <div className="flex items-center gap-4">
+                <div className="bg-orange-100 p-3 rounded-2xl text-orange-600">
+                  <ShoppingCart size={20} />
+                </div>
+                <div className="text-left">
+                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-1">Stai guardando</p>
+                  <p className="text-lg font-black italic uppercase tracking-tight text-gray-900 leading-none">{activeCategory}</p>
+                </div>
+              </div>
+              <div className="bg-gray-900 text-white p-3 rounded-2xl">
+                <ChevronRight size={20} />
+              </div>
+            </button>
+          </div>
 
           {/* Menu Grid Area */}
           <div id="menu-grid" className="flex-1">
@@ -439,6 +449,68 @@ export default function App() {
             <div className="h-6 w-px bg-white/20 mx-1" />
             <span className="font-black">€{total.toFixed(2)}</span>
           </motion.button>
+        )}
+      </AnimatePresence>
+
+      {/* Category Drawer (Mobile & Desktop Toggle) */}
+      <AnimatePresence>
+        {isCategoryMenuOpen && (
+          <>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsCategoryMenuOpen(false)}
+              className="fixed inset-0 bg-black/60 backdrop-blur-md z-[60]"
+            />
+            <motion.div 
+              initial={{ x: '-100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
+              transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+              className="fixed left-0 top-0 bottom-0 w-full max-w-xs bg-white z-[70] shadow-2xl flex flex-col"
+            >
+              <div className="p-8 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+                <div>
+                  <h2 className="text-2xl font-black tracking-tight uppercase italic leading-none">Menù</h2>
+                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mt-1">Scegli una categoria</p>
+                </div>
+                <button onClick={() => setIsCategoryMenuOpen(false)} className="p-3 bg-white shadow-sm hover:bg-gray-100 rounded-2xl transition-colors">
+                  <X size={24} />
+                </button>
+              </div>
+
+              <div className="flex-1 overflow-y-auto p-6 space-y-2">
+                {categories.map(cat => (
+                  <button
+                    key={cat}
+                    onClick={() => {
+                      setActiveCategory(cat);
+                      setIsCategoryMenuOpen(false);
+                      document.getElementById('menu-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}
+                    className={`w-full text-left px-6 py-5 rounded-3xl text-sm font-black uppercase tracking-tight transition-all flex items-center justify-between ${
+                      activeCategory === cat 
+                        ? 'bg-orange-600 text-white shadow-xl shadow-orange-100' 
+                        : 'text-gray-600 hover:bg-gray-50'
+                    }`}
+                  >
+                    {cat}
+                    {activeCategory === cat && <div className="w-2 h-2 bg-white rounded-full shadow-glow" />}
+                  </button>
+                ))}
+              </div>
+
+              <div className="p-8 bg-gray-50 border-t border-gray-100">
+                <a 
+                  href="tel:0226260852"
+                  className="w-full bg-gray-900 text-white py-5 rounded-3xl font-black uppercase tracking-widest text-xs flex items-center justify-center gap-3 shadow-xl shadow-gray-200"
+                >
+                  <Phone size={16} /> Chiama la Pizzeria
+                </a>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
 
