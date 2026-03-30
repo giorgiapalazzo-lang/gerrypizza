@@ -89,7 +89,7 @@ export default function App() {
   }, [subtotal]);
 
   const sendWhatsAppOrder = () => {
-    const phoneNumber = "393351724203";
+    const phoneNumber = "393282594465";
     let message = "Ciao Pizzeria Gerry! Vorrei effettuare un ordine:\n\n";
     
     cart.forEach(item => {
@@ -123,7 +123,7 @@ export default function App() {
                 <Phone size={12} className="text-orange-500" /> 02 26260852
               </a>
               <span className="w-px h-3 bg-white/20" />
-              <a href="https://wa.me/393351724203" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors flex items-center gap-1.5">
+              <a href="https://wa.me/393282594465" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors flex items-center gap-1.5">
                 <MessageCircle size={12} className="text-green-500" /> WhatsApp
               </a>
             </div>
@@ -135,13 +135,13 @@ export default function App() {
               <span className="flex items-center gap-1.5"><MapPin size={12} className="text-orange-500" /> Via Felice Cavallotti, 321 - Sesto SG</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-orange-500" /> 11:00-14:30 | 18:00-22:30</span>
               <span className="flex items-center gap-1.5"><Phone size={12} className="text-orange-500" /> 02 26260852</span>
-              <span className="flex items-center gap-1.5"><MessageCircle size={12} className="text-green-500" /> WhatsApp: 335 1724203</span>
+              <span className="flex items-center gap-1.5"><MessageCircle size={12} className="text-green-500" /> WhatsApp: 328 2594465</span>
             </div>
             <div className="flex items-center gap-8 text-[10px] font-bold uppercase tracking-widest">
               <span className="flex items-center gap-1.5"><MapPin size={12} className="text-orange-500" /> Via Felice Cavallotti, 321 - Sesto SG</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-orange-500" /> 11:00-14:30 | 18:00-22:30</span>
               <span className="flex items-center gap-1.5"><Phone size={12} className="text-orange-500" /> 02 26260852</span>
-              <span className="flex items-center gap-1.5"><MessageCircle size={12} className="text-green-500" /> WhatsApp: 335 1724203</span>
+              <span className="flex items-center gap-1.5"><MessageCircle size={12} className="text-green-500" /> WhatsApp: 328 2594465</span>
             </div>
           </div>
         </div>
@@ -434,6 +434,20 @@ export default function App() {
         </div>
       </main>
 
+      {/* Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/393282594465"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 left-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 hover:bg-green-600 transition-all active:scale-95 group"
+        aria-label="Contattaci su WhatsApp"
+      >
+        <MessageCircle size={24} />
+        <span className="absolute left-full ml-3 bg-gray-900 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+          Scrivici ora
+        </span>
+      </a>
+
       {/* Cart Button Floating */}
       <AnimatePresence>
         {cart.length > 0 && (
@@ -633,11 +647,11 @@ export default function App() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-orange-500" />
-                <span>02 26260852 | 335 1724203</span>
+                <span>02 26260852 | 328 2594465</span>
               </li>
               <li className="flex items-center gap-3">
                 <MessageCircle size={18} className="text-orange-500" />
-                <span>WhatsApp: 335 1724203</span>
+                <span>WhatsApp: 328 2594465</span>
               </li>
               <li className="text-xs text-gray-400 mt-2">
                 Consegna a domicilio: € 2,00. Pagamenti con bancomat anche a domicilio.
@@ -686,8 +700,9 @@ export default function App() {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto px-4 mt-12 pt-8 border-t border-white/5 text-center text-[10px] text-gray-600 uppercase tracking-widest font-bold">
-          © 2026 Pizzeria Gerry - Tutti i diritti riservati. Consegna a domicilio €2,00.
+        <div className="max-w-6xl mx-auto px-4 mt-12 pt-8 border-t border-white/5 text-center text-[10px] text-gray-600 uppercase tracking-widest font-bold space-y-2">
+          <p>© 2026 Pizzeria Gerry - Tutti i diritti riservati. Consegna a domicilio €2,00.</p>
+          <p className="text-gray-700">Powered by <a href="https://socialee.it" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-colors">socialee.it</a></p>
         </div>
       </footer>
     </div>
