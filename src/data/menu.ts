@@ -9,96 +9,104 @@ export interface MenuItem {
 }
 
 export const MENU_DATA: MenuItem[] = [
-  // Pizze Classiche
-  { id: "1", name: "Marinara", ingredients: "pomodoro, aglio, olio, origano", price: 4.00, priceHalfMeter: 10.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
-  { id: "2", name: "Margherita", ingredients: "pomodoro, mozzarella", price: 5.00, priceHalfMeter: 14.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1573821663912-56990124e3f2?auto=format&fit=crop&q=80&w=600" },
-  { id: "3", name: "Biancaneve", ingredients: "mozzarella, ricotta, grana, stracchino", price: 7.50, priceHalfMeter: 18.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" },
-  { id: "4", name: "Diavola", ingredients: "pomodoro, mozzarella, salame piccante, peperoncino", price: 7.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=600" },
-  { id: "5", name: "Cotto", ingredients: "pomodoro, mozzarella, prosciutto cotto", price: 7.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600" },
-  { id: "6", name: "Wurstel", ingredients: "pomodoro, mozzarella, wurstel", price: 7.00, priceHalfMeter: 18.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&q=80&w=600" },
-  { id: "7", name: "4 Stagioni", ingredients: "pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1511688855354-1261f61583d1?auto=format&fit=crop&q=80&w=600" },
-  { id: "8", name: "Capricciosa", ingredients: "pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, acciughe, olive, capperi, origano", price: 8.50, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&q=80&w=600" },
-  { id: "9", name: "Ortolana", ingredients: "pomodoro, mozzarella, melanzane, zucchine, peperoni", price: 7.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1528137858128-da30bb27436a?auto=format&fit=crop&q=80&w=600" },
-  { id: "10", name: "Tedesca", ingredients: "pomodoro, mozzarella, salsiccia, patatine fritte", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&q=80&w=600" },
-  { id: "11", name: "Italiana", ingredients: "pomodoro, mozzarella, rucola, pomodorini, grana", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=600" },
-  { id: "12", name: "Tirolese", ingredients: "pomodoro, mozzarella, zola, speck", price: 8.50, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&q=80&w=600" },
-  { id: "13", name: "Patatosa", ingredients: "mozzarella, pesto, patate cotte al forno", price: 7.50, priceHalfMeter: 18.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&q=80&w=600" },
-  { id: "14", name: "Vegetale", ingredients: "pomodoro, mozzarella, radicchio, grana", price: 7.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1528137858128-da30bb27436a?auto=format&fit=crop&q=80&w=600" },
-  { id: "15", name: "Olivia", ingredients: "mozzarella, spinaci, provola affumicata, grana", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1555072956-7758afb20e8f?auto=format&fit=crop&q=80&w=600" },
-  { id: "16", name: "Coraggiosa", ingredients: "pomodoro, mozzarella, cipolla, pancetta, tomo, acciughe, peperoncino", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
-  { id: "17", name: "Napoli", ingredients: "pomodoro, mozzarella, acciughe, origano", price: 7.00, priceHalfMeter: 18.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1573821663912-56990124e3f2?auto=format&fit=crop&q=80&w=600" },
-  { id: "18", name: "4 Salumi", ingredients: "pomodoro, mozzarella, prosciutto cotto, salame, salsiccia, wurstel", price: 9.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" },
-  { id: "19", name: "Contadina", ingredients: "pomodoro, mozzarella, salsiccia, funghi, peperoni", price: 8.50, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1511688855354-1261f61583d1?auto=format&fit=crop&q=80&w=600" },
-  { id: "20", name: "Tonno e Cipolla", ingredients: "pomodoro, mozzarella, tonno, cipolla", price: 7.50, priceHalfMeter: 18.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&q=80&w=600" },
-  { id: "21", name: "4 Formaggi", ingredients: "mozzarella, zola, scamorza, brie", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" },
-  { id: "22", name: "Mari e Monti", ingredients: "pomodoro, mozzarella, gamberetti, porcini", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=600" },
-  { id: "23", name: "Porciccia", ingredients: "pomodoro, mozzarella, porcini, salsiccia", price: 8.50, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&q=80&w=600" },
-  { id: "24", name: "Braccio di Ferro", ingredients: "pomodoro, mozzarella, spinaci, ricotta", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1555072956-7758afb20e8f?auto=format&fit=crop&q=80&w=600" },
-  { id: "25", name: "Stracchino", ingredients: "pomodoro, mozzarella, stracchino, rucola", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=600" },
-  { id: "26", name: "Bismark", ingredients: "pomodoro, mozzarella, prosciutto cotto, uovo", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600" },
-  { id: "27", name: "Pizza Kebab", ingredients: "pomodoro, mozzarella, carne di kebab, insalata, pomodori, cipolla, salsa yogurt, salsa piccante", price: 9.00, priceHalfMeter: 20.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&q=80&w=600" },
-
-  // Pizze Mais
-  { id: "28", name: "Pizza Mais", ingredients: "mozzarella, prosciutto cotto, mais, panna", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" },
-  { id: "29", name: "Romana", ingredients: "pomodoro, mozzarella, acciughe, capperi, olive", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
-  { id: "30", name: "Siciliana", ingredients: "pomodoro, acciughe, capperi, olive, origano", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1573821663912-56990124e3f2?auto=format&fit=crop&q=80&w=600" },
-  { id: "31", name: "Campagna", ingredients: "pomodoro, bufala, porcini", price: 8.00, priceHalfMeter: 20.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1511688855354-1261f61583d1?auto=format&fit=crop&q=80&w=600" },
-  { id: "32", name: "Pugliese", ingredients: "pomodoro, mozzarella, cipolla, origano", price: 7.00, priceHalfMeter: 18.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&q=80&w=600" },
-  { id: "33", name: "Parmigiana", ingredients: "pomodoro, mozzarella, melanzane, grana", price: 7.00, priceHalfMeter: 18.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1528137858128-da30bb27436a?auto=format&fit=crop&q=80&w=600" },
-  { id: "34", name: "Regina", ingredients: "pomodoro, mozzarella, prosciutto cotto, funghi", price: 7.00, priceHalfMeter: 18.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600" },
-  { id: "35", name: "Genovese", ingredients: "pomodoro, mozzarella, patatine fritte", price: 7.00, priceHalfMeter: 18.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&q=80&w=600" },
-  { id: "36", name: "Americana", ingredients: "pomodoro, mozzarella, prosciutto cotto, panna", price: 7.50, priceHalfMeter: 18.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" },
-  { id: "37", name: "Affumicata", ingredients: "pomodoro, mozzarella, scamorza, wurstel, speck", price: 8.50, priceHalfMeter: 20.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&q=80&w=600" },
-  { id: "38", name: "Calabrese", ingredients: "pomodoro, mozzarella di bufala, salame piccante, peperoni", price: 8.50, priceHalfMeter: 20.00, category: "Pizze Mais", image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=600" },
-
-  // Pizze senza glutine
-  { id: "sg1", name: "Margherita Senza Glutine", ingredients: "pomodoro, mozzarella, basilico", price: 9.00, category: "Pizze Senza Glutine", image: "https://images.unsplash.com/photo-1573821663912-56990124e3f2?auto=format&fit=crop&q=80&w=600" },
-
-  // Tranci alti
-  { id: "ta1", name: "Marinara (Trancio Alto)", ingredients: "pomodoro, aglio, olio, origano", price: 4.00, category: "Tranci Alti", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
-  { id: "ta2", name: "Margherita (Trancio Alto)", ingredients: "pomodoro, mozzarella", price: 6.50, category: "Tranci Alti", image: "https://images.unsplash.com/photo-1573821663912-56990124e3f2?auto=format&fit=crop&q=80&w=600" },
-  { id: "ta3", name: "Pugliese (Trancio Alto)", ingredients: "pomodoro fresco, olio, sale, origano", price: 4.00, category: "Tranci Alti", image: "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&q=80&w=600" },
+  // Menu Mezzogiorno
+  { id: "m1", name: "Menu Pizza a Mezzogiorno", ingredients: "Pizza classica a scelta + bibita + patatine fritte. Valido solo su pizza classica, esclusa pizza kebab, esclusi festivi.", price: 8.50, category: "Menu Mezzogiorno", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" },
+  { id: "m2", name: "Menu Kebab a Mezzogiorno", ingredients: "Panino o piadina kebab + bibita + patatine fritte. Valido dal lunedì al sabato, esclusi festivi.", price: 7.50, category: "Menu Mezzogiorno", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&q=80&w=600" },
 
   // Focacce alte
-  { id: "fa1", name: "Mediterranea", ingredients: "olio, sale", price: 4.50, category: "Focacce Alte", image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=600" },
-  { id: "fa2", name: "Pugliese", ingredients: "pomodoro fresco, olio, sale, origano", price: 5.50, category: "Focacce Alte", image: "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&q=80&w=600" },
-  { id: "fa3", name: "Patatosa", ingredients: "patate al forno, salsiccia, olio", price: 8.50, category: "Focacce Alte", image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&q=80&w=600" },
-  { id: "fa4", name: "Cipolletta", ingredients: "cipolle cotte, olio, sale", price: 8.00, category: "Focacce Alte", image: "https://images.unsplash.com/photo-1528137858128-da30bb27436a?auto=format&fit=crop&q=80&w=600" },
-  { id: "fa5", name: "Frescone", ingredients: "bresaola, rucola, grana a scaglie", price: 8.50, category: "Focacce Alte", image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=600" },
-  { id: "fa6", name: "Acciughe e Capperi", ingredients: "pomodori freschi, acciughe, capperi, olio", price: 7.50, category: "Focacce Alte", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "fa1", name: "Mediterranea", ingredients: "Pomodoro, mozzarella, olive nere", price: 4.50, category: "Focacce alte", image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=600" },
+  { id: "fa2", name: "Pugliese", ingredients: "Pomodoro, cipolla, salsiccia, origano", price: 5.50, category: "Focacce alte", image: "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&q=80&w=600" },
+  { id: "fa3", name: "Patate e Wurstel", ingredients: "Patate, wurstel, cipolla, salsa di yogurt", price: 5.50, category: "Focacce alte", image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&q=80&w=600" },
+  { id: "fa4", name: "Patataccia", ingredients: "Pomodoro, mozzarella, salsiccia, patate, cipolla, olio, origano", price: 5.50, category: "Focacce alte", image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&q=80&w=600" },
+  { id: "fa5", name: "Cipolla", ingredients: "Cipolla, mozzarella, olio, origano", price: 4.00, category: "Focacce alte", image: "https://images.unsplash.com/photo-1528137858128-da30bb27436a?auto=format&fit=crop&q=80&w=600" },
+  { id: "fa6", name: "Frescona", ingredients: "Pomodoro, mozzarella, stracciatella, pomodorini gialli e rossi, rucola, sale", price: 8.50, category: "Focacce alte", image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=600" },
+  { id: "fa7", name: "Frescona Burger", ingredients: "Piatta con hamburger, insalata, pomodoro, cipolla, salsa di yogurt", price: 8.50, category: "Focacce alte", image: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&q=80&w=600" },
+  { id: "fa8", name: "Aghi di prezzemolo e capperi", ingredients: "Pomodorini freschi, acciughe, capperi, olio, aglio, peperoncino", price: 7.50, category: "Focacce alte", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
 
   // Calzoni
-  { id: "c1", name: "Classico", ingredients: "pomodoro, mozzarella", price: 6.00, category: "Calzoni", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
-  { id: "c2", name: "Farcito", ingredients: "pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive", price: 7.50, category: "Calzoni", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
-  { id: "c3", name: "Cotto", ingredients: "pomodoro, mozzarella, prosciutto cotto", price: 7.00, category: "Calzoni", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
+  { id: "c1", name: "Classico", ingredients: "Pomodoro, mozzarella", price: 6.00, category: "Calzoni", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
+  { id: "c2", name: "Farcito", ingredients: "Pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive", price: 7.50, category: "Calzoni", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
+  { id: "c3", name: "Cotto", ingredients: "Pomodoro, mozzarella, prosciutto cotto", price: 7.00, category: "Calzoni", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
 
-  // Panzerotti
-  { id: "p1", name: "Classico", ingredients: "pomodoro, mozzarella", price: 3.50, category: "Panzerotti", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
-  { id: "p2", name: "Cotto", ingredients: "pomodoro, mozzarella, prosciutto cotto", price: 4.00, category: "Panzerotti", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
-  { id: "p3", name: "Bari", ingredients: "pomodoro, mozzarella, cipolla cotta al forno, provolone", price: 4.00, category: "Panzerotti", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
-  { id: "p4", name: "Salsiccia e Friarielli", ingredients: "pomodoro, mozzarella, salsiccia, friarielli", price: 4.00, category: "Panzerotti", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
+  // Panuozzi fritti e al forno
+  { id: "p1", name: "Classico", ingredients: "Mozzarella", price: 3.50, category: "Panuozzi fritti e al forno", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
+  { id: "p2", name: "Cotto", ingredients: "Mozzarella, prosciutto cotto", price: 4.00, category: "Panuozzi fritti e al forno", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
+  { id: "p3", name: "Bari", ingredients: "Mozzarella, salsiccia, cipolla cotta al forno, provolone", price: 4.00, category: "Panuozzi fritti e al forno", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
+  { id: "p4", name: "Boscaiolo", ingredients: "Mozzarella, salsiccia, friarielli", price: 4.00, category: "Panuozzi fritti e al forno", image: "https://images.unsplash.com/photo-1559978137-8c560d91e9bc?auto=format&fit=crop&q=80&w=600" },
 
   // Sfizi
   { id: "s1", name: "Patatine Fritte", price: 4.00, category: "Sfizi", image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=600" },
-  { id: "s2", name: "Gnocchi Fritto", price: 4.50, category: "Sfizi", image: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=600" },
-  { id: "s3", name: "Crocchette di Patate (8 pezzi)", price: 4.50, category: "Sfizi", image: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=600" },
-  { id: "s4", name: "Mozzarelline (10 pezzi)", price: 4.00, category: "Sfizi", image: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=600" },
-  { id: "s5", name: "Anelli di Cipolla (10 pezzi)", price: 4.00, category: "Sfizi", image: "https://images.unsplash.com/photo-1639122612239-7a3351469b3a?auto=format&fit=crop&q=80&w=600" },
-  { id: "s6", name: "Nuggets (6 pezzi)", price: 4.50, category: "Sfizi", image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=600" },
+  { id: "s2", name: "Nuggets (6 pezzi)", price: 4.50, category: "Sfizi", image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=600" },
+  { id: "s3", name: "Gnocco fritto (8 pezzi)", price: 4.50, category: "Sfizi", image: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=600" },
+  { id: "s4", name: "Arancini di patate (10 pezzi)", price: 4.00, category: "Sfizi", image: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=600" },
+  { id: "s5", name: "Mozzarelline (10 pezzi)", price: 4.50, category: "Sfizi", image: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=600" },
+  { id: "s6", name: "Anelli di cipolla (6 pezzi)", price: 4.00, category: "Sfizi", image: "https://images.unsplash.com/photo-1639122612239-7a3351469b3a?auto=format&fit=crop&q=80&w=600" },
 
-  // Kebab
-  { id: "k1", name: "Panino Kebab", ingredients: "carne di kebab, insalata, pomodoro, cipolla, salsa yogurt, salsa piccante", price: 5.00, category: "Kebab", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&q=80&w=600" },
-  { id: "k2", name: "Piadina Kebab", ingredients: "carne di kebab, insalata, pomodoro, cipolla, salsa yogurt, salsa piccante", price: 5.50, category: "Kebab", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&q=80&w=600" },
-  { id: "k3", name: "Pizza Kebab", ingredients: "pomodoro, mozzarella, carne di kebab, insalata, pomodoro, cipolla, salsa yogurt, salsa piccante", price: 9.00, category: "Kebab", image: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&q=80&w=600" },
-  { id: "k4", name: "Vaschetta Piccola + Pane", price: 5.00, category: "Kebab", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&q=80&w=600" },
-  { id: "k5", name: "Vaschetta Grande + Pane", price: 7.00, category: "Kebab", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&q=80&w=600" },
+  // Panini e piadine kebab
+  { id: "k1", name: "Panino Kebab", ingredients: "Panino, insalata, pomodoro, cipolla, salsa di yogurt", price: 5.00, category: "Panini e piadine kebab", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&q=80&w=600" },
+  { id: "k2", name: "Piadina Kebab", ingredients: "Piadina, insalata, pomodoro, cipolla, salsa di yogurt", price: 5.50, category: "Panini e piadine kebab", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&q=80&w=600" },
+  { id: "k3", name: "Pizza Kebab", ingredients: "Pizza con kebab, insalata, pomodoro, cipolla, salsa di yogurt", price: 6.00, category: "Panini e piadine kebab", image: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&q=80&w=600" },
+  { id: "k4", name: "Pizze con doppia mozzarella", price: 9.00, category: "Panini e piadine kebab", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" },
 
-  // Bevande
-  { id: "b1", name: "Lattine (Coca Cola, Fanta, Sprite, Thè limone o pesca)", price: 2.00, category: "Bevande", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
-  { id: "b2", name: "Acqua naturale o frizzante (50 cl)", price: 1.00, category: "Bevande", image: "https://images.unsplash.com/photo-1548919973-5cfe5d4fc474?auto=format&fit=crop&q=80&w=600" },
-  { id: "b3", name: "Succhi di frutta", price: 2.00, category: "Bevande", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
+  // Pizze Classiche
+  { id: "pc1", name: "Margherita", ingredients: "Pomodoro, mozzarella", price: 5.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc2", name: "Marinara", ingredients: "Pomodoro, aglio, origano", price: 4.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc3", name: "Napoli", ingredients: "Pomodoro, mozzarella, acciughe, origano", price: 6.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc4", name: "Romana", ingredients: "Pomodoro, mozzarella, acciughe, capperi, origano", price: 6.50, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc5", name: "Pugliese", ingredients: "Pomodoro, mozzarella, cipolla", price: 6.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc6", name: "Prosciutto", ingredients: "Pomodoro, mozzarella, prosciutto cotto", price: 6.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc7", name: "Funghi", ingredients: "Pomodoro, mozzarella, funghi", price: 6.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc8", name: "Carciofi", ingredients: "Pomodoro, mozzarella, carciofi", price: 6.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc9", name: "Wurstel", ingredients: "Pomodoro, mozzarella, wurstel", price: 6.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc10", name: "Salsiccia", ingredients: "Pomodoro, mozzarella, salsiccia", price: 6.50, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc11", name: "Salame piccante", ingredients: "Pomodoro, mozzarella, salame piccante", price: 6.50, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc12", name: "Tonno e cipolla", ingredients: "Pomodoro, mozzarella, tonno, cipolla", price: 7.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc13", name: "Prosciutto e funghi", ingredients: "Pomodoro, mozzarella, prosciutto cotto, funghi", price: 7.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc14", name: "4 stagioni", ingredients: "Pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive", price: 7.50, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc15", name: "Capricciosa", ingredients: "Pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive, acciughe, origano", price: 8.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc16", name: "4 formaggi", ingredients: "Pomodoro, mozzarella, gorgonzola, fontina, emmental", price: 7.50, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc17", name: "Verdure", ingredients: "Pomodoro, mozzarella, zucchine, melanzane, peperoni", price: 7.50, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc18", name: "Speck e zola", ingredients: "Pomodoro, mozzarella, speck, gorgonzola", price: 7.50, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc19", name: "Boscaiola", ingredients: "Pomodoro, mozzarella, funghi, salsiccia", price: 7.50, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc20", name: "Tirolese", ingredients: "Pomodoro, mozzarella, speck, porcini", price: 8.00, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pc21", name: "Americana", ingredients: "Pomodoro, mozzarella, wurstel, patatine fritte", price: 7.50, category: "Pizze Classiche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
 
-  // Menu Mezzogiorno
-  { id: "m1", name: "Menu Pizza a Mezzogiorno", ingredients: "Pizza classica a scelta + bibita + patatine fritte (esclusa pizza kebab, escluso festivi)", price: 8.50, category: "Menu Mezzogiorno", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=600" },
-  { id: "m2", name: "Menu Kebab a Mezzogiorno", ingredients: "Panino o piadina kebab + bibita + patatine fritte (escluso festivi)", price: 7.50, category: "Menu Mezzogiorno", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&q=80&w=600" },
+  // Pizze Speciali
+  { id: "ps1", name: "Valtellina", ingredients: "Pomodoro, mozzarella, bresaola, rucola, grana", price: 8.50, category: "Pizze Speciali", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "ps2", name: "Delicata", ingredients: "Pomodoro, mozzarella, crudo, rucola, grana", price: 8.50, category: "Pizze Speciali", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "ps3", name: "Sfiziosa", ingredients: "Pomodoro, mozzarella, crudo, porcini", price: 8.50, category: "Pizze Speciali", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "ps4", name: "Bufala", ingredients: "Pomodoro, mozzarella di bufala, basilico", price: 7.50, category: "Pizze Speciali", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+
+  // Pizze di Mare
+  { id: "pm1", name: "Frutti di mare", ingredients: "Pomodoro, mozzarella, frutti di mare, aglio, prezzemolo", price: 9.00, category: "Pizze di Mare", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pm2", name: "Gamberetti e zucchine", ingredients: "Pomodoro, mozzarella, gamberetti, zucchine", price: 8.50, category: "Pizze di Mare", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+
+  // Pizze Bianche
+  { id: "pb1", name: "Biancaneve", ingredients: "Mozzarella", price: 5.00, category: "Pizze Bianche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pb2", name: "Zola e noci", ingredients: "Mozzarella, gorgonzola, noci", price: 7.50, category: "Pizze Bianche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pb3", name: "Friarielli e salsiccia", ingredients: "Mozzarella, friarielli, salsiccia", price: 8.00, category: "Pizze Bianche", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+
+  // Pizze Gerry
+  { id: "pg1", name: "Gerry", ingredients: "Pomodoro, mozzarella, kebab, patatine fritte, salse", price: 9.00, category: "Pizze Gerry", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pg2", name: "Super Gerry", ingredients: "Pomodoro, mozzarella, kebab, patatine fritte, salse, uovo", price: 10.00, category: "Pizze Gerry", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+
+  // Pizze al Kebab
+  { id: "pk1", name: "Kebab", ingredients: "Pomodoro, mozzarella, kebab", price: 7.50, category: "Pizze al Kebab", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pk2", name: "Kebab speciale", ingredients: "Pomodoro, mozzarella, kebab, insalata, pomodoro fresco, cipolla, salse", price: 8.50, category: "Pizze al Kebab", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+
+  // Pizze al Mezzo Metro
+  { id: "pmm1", name: "Margherita (Mezzo Metro)", ingredients: "Pomodoro, mozzarella", price: 13.00, category: "Pizze al Mezzo Metro", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+  { id: "pmm2", name: "Farcita (Mezzo Metro)", ingredients: "A scelta tra le classiche", price: 16.00, category: "Pizze al Mezzo Metro", image: "https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=600" },
+
+  // Bibite
+  { id: "b1", name: "Coca Cola (33 cl)", price: 2.00, category: "Bibite", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
+  { id: "b1-large", name: "Coca Cola (1,5 l)", price: 3.00, category: "Bibite", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
+  { id: "b2", name: "Fanta (33 cl)", price: 2.00, category: "Bibite", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
+  { id: "b2-large", name: "Fanta (1,5 l)", price: 3.00, category: "Bibite", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
+  { id: "b3", name: "Sprite (33 cl)", price: 2.00, category: "Bibite", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
+  { id: "b3-large", name: "Sprite (1,5 l)", price: 3.00, category: "Bibite", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
+  { id: "b4", name: "Tè limone (50 cl)", price: 2.00, category: "Bibite", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
+  { id: "b5", name: "Tè pesca (50 cl)", price: 2.00, category: "Bibite", image: "https://images.unsplash.com/photo-1544145945-f904253d0c7b?auto=format&fit=crop&q=80&w=600" },
+  { id: "b6", name: "Acqua (50 cl)", price: 1.00, category: "Bibite", image: "https://images.unsplash.com/photo-1548919973-5cfe5d4fc474?auto=format&fit=crop&q=80&w=600" },
+
 ];
